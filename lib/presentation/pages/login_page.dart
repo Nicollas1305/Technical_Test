@@ -9,7 +9,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   bool showPassword = false;
 
@@ -26,12 +26,12 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextField(
-              controller: usernameController,
+              controller: emailController,
               decoration: const InputDecoration(
                 contentPadding: EdgeInsets.all(20.0),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(15.0))),
-                labelText: 'Usuário',
+                labelText: 'Email',
                 labelStyle: TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.w600,
