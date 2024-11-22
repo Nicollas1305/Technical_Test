@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.login,
       onGenerateRoute: Routes.generateRoute,
       theme: ThemeData(
-        primaryColor: Colors.blue,
+        primaryColor: const Color(0xFF075999),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF075999),
